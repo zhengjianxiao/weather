@@ -30,53 +30,10 @@ body , html{
     z-index: 1;
     border-radius: 20px;
 }
-@media only screen and (max-width:768px){
-    .wrap{
-        width:80%;
-        height:200px;
-        background-color: #ccc;
-        
-        border: none;
-        position: absolute;
-        top: 10%;
-        right: 10%;
-        z-index: 1;
-        border-radius: 20px;
-    }
-    .content{
-        width: 40%;
-        height:100%;
-        background: linear-gradient( 90deg ,skyblue , rgb(49, 49, 177));
-        border: none;
-        box-sizing: border-box;
-        padding: 10px;
-        border-radius: 20px 0 0 20px;
-        float: left;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: space-between;
-        color: white;
-        font-size: 14px;
-    }
-    .content .weeknow{
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .content .datenow{
-        margin : 5px 0;
-    }
-    .content #main_icon{
-        font-size: 20px;
-    }
-    .content .main_tem{
-        font-size: 20px;
-    }
-    .content_footer .temperature{
-        margin-right: 5px;
-    }
-    
-}
+
+
+
+
 .content{
     width: 40%;
     height:100%;
@@ -248,4 +205,53 @@ body , html{
 .icon-leidian{
     /* 雷电 */
     color: #fff;
+}
+
+
+@media only screen and (max-width:768px){
+    .wrap{
+        width:80%;
+        height:200px;
+        background-color: #ccc;
+        
+        border: none;
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .content{
+        width: 40%;
+        height:100%;
+        background: linear-gradient( 90deg ,skyblue , rgb(49, 49, 177));
+        border: none;
+        box-sizing: border-box;
+        padding: 5px;
+        border-radius: 20px 0 0 20px;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        color: white;
+        font-size: 14px;
+    }
+    .content .weeknow{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .content .datenow{
+        margin : 5px 0;
+    }
+    .content #main_icon{
+        font-size: 20px;
+    }
+    .content .main_tem{
+        font-size: 26px;
+    }
+    .content_footer .temperature{
+        margin-right: 5px;
+    }
+    
 }
