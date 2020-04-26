@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天气查询系统</title>
+    <link rel="stylesheet" href="font_1780858_v0xlfam8we/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=	3151f8f7c74502d6830c2bf5305a4340"></script> 
+    
+</head>
+<body>
+
+    <div id="container">
+       
+    </div>
+
+
+    <div class="wrap">
+        <div class="content">
+            <div class="content_header">
+                <div  class="weeknow">星期二</div>
+                <div class="datenow">2020-01-01</div>
+                <div ><i class="icon iconfont icon-icon-test1"></i><span class="areanow">福州</span></div>
+            </div>
+            <div class="content_footer icon iconfont">
+                <div class="icon-tianqi5" id="main_icon"></div>
+                <div class="main_tem"><span  class="temperature">10</span>℃</div>
+                <div class="desc">多云转小雨</div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info_header ">
+                <div class="wendu">
+                    <span  class="order">温度</span>
+                    <span>
+                        <span  class="num" id="infoheadertem">10</span><a>℃</a>
+                    </span>
+                </div>
+                <div class="winddirection">
+                    <span  class="order" >风向</span>
+                    <span  class="num" id="winddirection">东北风</span>
+                </div>
+                <div class="windpower">
+                    <span  class="order">风速</span>
+                    <span  class="num" id="windpower">5</span>
+                </div>
+            </div>
+            <div class="info_content icon iconfont">
+                <div class="forecas forecasbgc" id ="forecas1">
+                    <div class="icon-tianqi5" id="forcasicon1"></div>
+                    <div class="weekday" id="forecaweek1">星期二</div>
+                    <div class="temp">
+                        <span class="tem1" id="forecatemday1">17</span><span>℃</span>
+                        <i>~</i>
+                        <span class="tem2" id="forecatemnight1">20</span><span>℃</span>
+                    </div>
+                </div>
+                <div class="forecas" id ="forecas2">
+                    <div class="icon-xue" id="forcasicon2"></div>
+                    <div class="weekday" id="forecaweek2">星期二</div>
+                    <div class="temp">
+                        <span class="tem1" id="forecatemday2">17</span><span>℃</span>
+                        <i>~</i>
+                        <span class="tem2" id="forecatemnight2">20</span><span>℃</span>
+                    </div>
+                </div>
+                <div class="forecas" id ="forecas3">
+                    <div class="icon-tianqi6" id="forcasicon3"></div>
+                    <div class="weekday" id="forecaweek3">星期二</div>
+                    <div class="temp">
+                        <span class="tem1" id="forecatemday3">17</span><span>℃</span>
+                        <i>~</i>
+                        <span class="tem2" id="forecatemnight3">20</span><span>℃</span>
+                    </div>
+                </div>
+                <div class="forecas" id ="forecas4">
+                    <div class="icon-leidian" id="forcasicon4"></div>
+                    <div class="weekday" id="forecaweek4">星期二</div>
+                    <div class="temp">
+                        <span class="tem1" id="forecatemday4">17</span><span>℃</span>
+                        <i>~</i>
+                        <span class="tem2" id="forecatemnight4">20</span><span>℃</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info_foot ">
+                <input type="text" id="city" placeholder="请输入城市">
+                <button id="submit">查询</button>
+            </div>
+            
+        </div>
+        
+    </div>
+   
+    
+</body>
+<script src="./js/index.js"></script>
+
+</html>

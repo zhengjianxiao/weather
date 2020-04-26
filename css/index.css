@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body , html{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.wrap{
+    width:40%;
+    height:300px;
+    background-color: #ccc;
+    
+    border: none;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 1;
+    border-radius: 20px;
+}
+.content{
+    width: 40%;
+    height:100%;
+    background: linear-gradient( 90deg ,skyblue , rgb(49, 49, 177));
+    border: none;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    color: white;
+    font-size: 16px;
+}
+.content .weeknow{
+    font-size: 26px;
+    font-weight: bold;
+}
+.content .datenow{
+    margin : 10px 0;
+}
+.content #main_icon{
+    font-size: 30px;
+}
+.content .main_tem{
+    font-size: 40px;
+}
+.content_footer .temperature{
+    margin-right: 10px;
+}
+
+
+.info{
+    width: 60%;
+    height: 100%;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(40, 40, 41);
+    border-radius: 0 20px 20px 0;
+}
+.info_header{
+    width: 85%;
+    height: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 10px ;
+}
+.info_header div{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.info_content{
+    width: 90%;
+    height: 30%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.info_content .forecas{
+    width: 24%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    cursor: pointer;
+}
+.info_content .forecas:hover{
+    background-color: rgb(68, 68, 71);
+    border-radius: 10px;
+}
+.info_foot{
+    width: 85%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+#city{
+    width:80%;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+#submit{
+    width:90%;
+    height:50%;
+    border: none;
+    outline: none;
+    background: linear-gradient( 90deg ,skyblue , rgb(49, 49, 177));
+    border-radius: 20px;
+    cursor: pointer;
+    color:#fff;
+    transition: transform 0.3s reverse;
+}
+#submit:hover{
+    transform: scale(1.1);
+}
+
+@keyframes rabbit {
+    from{
+        transform: scale3d(1 , 1 , 1);
+    }
+    80%{
+        transform: scale3d(1.25 , 0.75 , 1);
+    }
+    60%{
+        transform: scale3d(0.75 , 1 , 1);
+    }
+    40%{
+        transform: scale3d(1.2 , 0.8 , 1);
+    }
+    20%{
+        transform: scale3d(0.8 , 0.9 , 1);
+    }
+    to{
+        transform: scale3d(1 , 1 , 1);
+    }
+}
+
+.forecasbgc{
+    background-color: rgb(126, 118, 118);
+    border-radius: 10px;
+}
+
+.icon-icon-test1{
+    /* 定位 */
+    color: #ccc;
+}
+.icon-tianqi2{
+    /* 多云 阴*/
+    color:#fff;
+}
+.icon-tianqi6{
+    /* 晴天 */
+    color:yellow;
+}
+.icon-tianqi5{
+    /* 晴转多云 */
+    color: #fff;
+}
+.icon-tianqi1{
+    /* 多云转晴 */
+    color: #fff;
+}
+.icon-xiaoyu{
+    /*中雨 小雨 */
+    color: #fff;
+}
+.icon-xue{
+    /* 大雨 雪 */
+    color: #fff;
+}
+.icon-leidian{
+    /* 雷电 */
+    color: #fff;
+}
