@@ -122,13 +122,13 @@ function search() {
 function getWeather() {
     var city = document.getElementById('city');
     var val = city.value;
-    if (val == "") {
+    if (val.trim() == "") {
         return alert("请输入城市名进行查询！");
     }
 
     var weather = new AMap.Weather();
     //执行实时天气信息查询
-    weather.getForecast(val, getdata);
+    weather.getForecast(val.trim(), getdata);
 }
 
 function getdata(err, data) {
