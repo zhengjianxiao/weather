@@ -322,7 +322,7 @@ map.on('click', function (ev) {
         geocoder.getAddress(lnglat, function (status, result) {
             if (status === 'complete' && result.info === 'OK') {
                 // result为对应的地理位置详细信息
-                console.log(result.regeocode.addressComponent.adcode);
+
                 var addr = result.regeocode.addressComponent.adcode;
                 var city = document.getElementById('city');
                 city.value = addr; //将解析到的citycode赋值给文本框执行search函数 ， 然后清空文本框
@@ -340,7 +340,6 @@ AMap.plugin('AMap.CitySearch', function () {
     citySearch.getLocalCity(function (status, result) {
         if (status === 'complete' && result.info === 'OK') {
             // 查询成功，result即为当前所在城市信息
-            console.log(result.adcode);
             var addr = result.adcode;
             var city = document.getElementById('city');
             city.value = addr;
@@ -354,36 +353,36 @@ AMap.plugin('AMap.CitySearch', function () {
 
 
 
-AMap.plugin('AMap.Driving', function() {
-    var driving = new AMap.Driving({
-      // 驾车路线规划策略，AMap.DrivingPolicy.LEAST_TIME是最快捷模式
-      policy: AMap.DrivingPolicy.LEAST_TIME
-    })
+// AMap.plugin('AMap.Driving', function() {
+//     var driving = new AMap.Driving({
+//       // 驾车路线规划策略，AMap.DrivingPolicy.LEAST_TIME是最快捷模式
+//       policy: AMap.DrivingPolicy.LEAST_TIME
+//     })
     
-    var points = [
-      { keyword: '北京市地震局（公交站）',city:'北京' },
-      { keyword: '亦庄文化园（地铁站）',city:'北京' }
-    ]
+//     var points = [
+//       { keyword: '北京市地震局（公交站）',city:'北京' },
+//       { keyword: '亦庄文化园（地铁站）',city:'北京' }
+//     ]
     
-    driving.search(points, function (status, result) {
-      // 未出错时，result即是对应的路线规划方案
-      console.log(result);
-    })
-  })
+//     driving.search(points, function (status, result) {
+//       // 未出错时，result即是对应的路线规划方案
+//       console.log(result);
+//     })
+//   })
 
 
 
-  AMap.plugin('AMap.Driving', function() {
-    var driving = new AMap.Driving({
-      // 驾车路线规划策略，AMap.DrivingPolicy.LEAST_TIME是最快捷模式
-      policy: AMap.DrivingPolicy.LEAST_TIME
-    })
+//   AMap.plugin('AMap.Driving', function() {
+//     var driving = new AMap.Driving({
+//       // 驾车路线规划策略，AMap.DrivingPolicy.LEAST_TIME是最快捷模式
+//       policy: AMap.DrivingPolicy.LEAST_TIME
+//     })
     
-    var startLngLat = [116.379028, 39.865042]
-    var endLngLat = [116.427281, 39.903719]
+//     var startLngLat = [116.379028, 39.865042]
+//     var endLngLat = [116.427281, 39.903719]
     
-    driving.search(startLngLat, endLngLat, function (status, result) {
-      // 未出错时，result即是对应的路线规划方案
-      console.log(result);
-    })
-  })
+//     driving.search(startLngLat, endLngLat, function (status, result) {
+//       // 未出错时，result即是对应的路线规划方案
+//       console.log(result);
+//     })
+//   })
