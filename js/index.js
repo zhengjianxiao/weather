@@ -129,6 +129,7 @@ function getWeather() {
     var weather = new AMap.Weather();
     //执行实时天气信息查询
     weather.getForecast(val.trim(), getdata);
+    city.value = '';
 }
 
 function getdata(err, data) {
@@ -343,8 +344,8 @@ AMap.plugin('AMap.CitySearch', function () {
             var addr = result.adcode;
             var city = document.getElementById('city');
             city.value = addr;
-            search();
-            city.value = '';
+                search();
+                //city.value = ''; 
         }
     })
 });
